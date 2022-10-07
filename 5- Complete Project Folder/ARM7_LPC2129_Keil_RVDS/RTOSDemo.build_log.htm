@@ -1,0 +1,113 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.25.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Islam Hussein, van Dinther, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.25.2.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARM.DLL V5.25.2.0
+Dialog DLL:      DARMP.DLL V1.53.0.0
+Target DLL:      UL2ARM.DLL V1.74.10.0
+Dialog DLL:      TARMP.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+D:\FreeRTOS\FreeRTOSv202112.00\FreeRTOS\Demo\ARM7_LPC2129_Keil_RVDS\RTOSDemo.uvproj
+Project File Date:  10/02/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'RTOSDemo_ARM'
+assembling serialISR.s...
+compiling GPIO.c...
+assembling Startup.s...
+compiling GPIO_cfg.c...
+compiling ParTest.c...
+.\FreeRTOSConfig.h(168): warning:  #1-D: last line of file ends without a newline
+  #endif /* FREERTOS_CONFIG_H */
+ParTest\ParTest.c: 1 warning, 0 errors
+compiling serial.c...
+.\FreeRTOSConfig.h(168): warning:  #1-D: last line of file ends without a newline
+  #endif /* FREERTOS_CONFIG_H */
+D:\EgFWD\RTOS\Starter_Files_V1\source\serial.c(185): warning:  #550-D: variable "cChar"  was set but never used
+  signed char cChar;
+D:\EgFWD\RTOS\Starter_Files_V1\source\serial.c: 2 warnings, 0 errors
+compiling main.c...
+.\FreeRTOSConfig.h(168): warning:  #1-D: last line of file ends without a newline
+  #endif /* FREERTOS_CONFIG_H */
+D:\EgFWD\RTOS\Starter_Files_V1\source\main.c(168): warning:  #167-D: argument of type "void *" is incompatible with parameter of type "TaskHookFunction_t"
+  	vTaskSetApplicationTaskTag( NULL, (void *) 1 );
+D:\EgFWD\RTOS\Starter_Files_V1\source\main.c(201): warning:  #167-D: argument of type "volatile TickType_t *" is incompatible with parameter of type "TickType_t *const"
+  		vTaskDelayUntil(&xLastWakeTime , BUTTON_1_PERIOD);
+D:\EgFWD\RTOS\Starter_Files_V1\source\main.c(221): warning:  #167-D: argument of type "void *" is incompatible with parameter of type "TaskHookFunction_t"
+  	vTaskSetApplicationTaskTag( NULL, (void *) 2 );
+D:\EgFWD\RTOS\Starter_Files_V1\source\main.c(254): warning:  #167-D: argument of type "volatile TickType_t *" is incompatible with parameter of type "TickType_t *const"
+  		vTaskDelayUntil(&xLastWakeTime , BUTTON_2_PERIOD);
+D:\EgFWD\RTOS\Starter_Files_V1\source\main.c(269): warning:  #167-D: argument of type "void *" is incompatible with parameter of type "TaskHookFunction_t"
+  	vTaskSetApplicationTaskTag( NULL, (void *) 3 );
+D:\EgFWD\RTOS\Starter_Files_V1\source\main.c(281): warning:  #167-D: argument of type "volatile TickType_t *" is incompatible with parameter of type "TickType_t *const"
+  		vTaskDelayUntil(&xLastWakeTime , TRANSMITTER_PERIOD);
+D:\EgFWD\RTOS\Starter_Files_V1\source\main.c(264): warning:  #550-D: variable "String_Periodic"  was set but never used
+  	volatile char*	String_Periodic;
+D:\EgFWD\RTOS\Starter_Files_V1\source\main.c(304): warning:  #167-D: argument of type "void *" is incompatible with parameter of type "TaskHookFunction_t"
+  	vTaskSetApplicationTaskTag( NULL, (void *) 4 );
+D:\EgFWD\RTOS\Starter_Files_V1\source\main.c(316): warning:  #191-D: type qualifier is meaningless on cast type
+  				if (receiverBuffer == RISING_EDGE) vSerialPutString((const signed char * const)BUTTON_1_ON, 12);
+D:\EgFWD\RTOS\Starter_Files_V1\source\main.c(317): warning:  #191-D: type qualifier is meaningless on cast type
+  				else if (receiverBuffer == FALLING_EDGE) vSerialPutString((const signed char * const)BUTTON_1_OFF, 13);
+D:\EgFWD\RTOS\Starter_Files_V1\source\main.c(328): warning:  #191-D: type qualifier is meaningless on cast type
+  				if (receiverBuffer == RISING_EDGE) vSerialPutString((const signed char * const)BUTTON_2_ON, 12);
+D:\EgFWD\RTOS\Starter_Files_V1\source\main.c(329): warning:  #191-D: type qualifier is meaningless on cast type
+  				else if (receiverBuffer == FALLING_EDGE) vSerialPutString((const signed char * const)BUTTON_2_OFF, 13);
+D:\EgFWD\RTOS\Starter_Files_V1\source\main.c(339): warning:  #191-D: type qualifier is meaningless on cast type
+  				if (receiverBuffer == PERIODIC_STRING) vSerialPutString((const signed char * const)Periodic_String, 9);
+D:\EgFWD\RTOS\Starter_Files_V1\source\main.c(345): warning:  #167-D: argument of type "volatile TickType_t *" is incompatible with parameter of type "TickType_t *const"
+  		vTaskDelayUntil(&xLastWakeTime , UART_PERIOD);
+D:\EgFWD\RTOS\Starter_Files_V1\source\main.c(359): warning:  #167-D: argument of type "void *" is incompatible with parameter of type "TaskHookFunction_t"
+  	vTaskSetApplicationTaskTag( NULL, ( void * ) 5 );	
+D:\EgFWD\RTOS\Starter_Files_V1\source\main.c(367): warning:  #167-D: argument of type "volatile TickType_t *" is incompatible with parameter of type "TickType_t *const"
+  		vTaskDelayUntil( &xLastWakeTime , LOAD_1_PERIOD);
+D:\EgFWD\RTOS\Starter_Files_V1\source\main.c(383): warning:  #167-D: argument of type "void *" is incompatible with parameter of type "TaskHookFunction_t"
+  	vTaskSetApplicationTaskTag( NULL, ( void * ) 6 );
+D:\EgFWD\RTOS\Starter_Files_V1\source\main.c(390): warning:  #167-D: argument of type "volatile TickType_t *" is incompatible with parameter of type "TickType_t *const"
+  		vTaskDelayUntil( &xLastWakeTime , LOAD_2_PERIOD);
+D:\EgFWD\RTOS\Starter_Files_V1\source\main.c(430): warning:  #223-D: function "xTaskPeriodicCreate" declared implicitly
+  		xTaskPeriodicCreate(
+D:\EgFWD\RTOS\Starter_Files_V1\source\main.c: 20 warnings, 0 errors
+compiling list.c...
+.\FreeRTOSConfig.h(168): warning:  #1-D: last line of file ends without a newline
+  #endif /* FREERTOS_CONFIG_H */
+..\..\Source\list.c: 1 warning, 0 errors
+assembling portASM.s...
+compiling port.c...
+.\FreeRTOSConfig.h(168): warning:  #1-D: last line of file ends without a newline
+  #endif /* FREERTOS_CONFIG_H */
+..\..\Source\portable\RVDS\ARM7_LPC21xx\port.c: 1 warning, 0 errors
+compiling heap_2.c...
+.\FreeRTOSConfig.h(168): warning:  #1-D: last line of file ends without a newline
+  #endif /* FREERTOS_CONFIG_H */
+..\..\Source\portable\MemMang\heap_2.c: 1 warning, 0 errors
+compiling queue.c...
+.\FreeRTOSConfig.h(168): warning:  #1-D: last line of file ends without a newline
+  #endif /* FREERTOS_CONFIG_H */
+..\..\Source\queue.c: 1 warning, 0 errors
+compiling tasks.c...
+.\FreeRTOSConfig.h(168): warning:  #1-D: last line of file ends without a newline
+  #endif /* FREERTOS_CONFIG_H */
+..\..\Source\tasks.c: 1 warning, 0 errors
+linking...
+Program Size: Code=21468 RO-data=32 RW-data=280 ZI-data=15376  
+".\RTOSDemo.axf" - 0 Error(s), 28 Warning(s).
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

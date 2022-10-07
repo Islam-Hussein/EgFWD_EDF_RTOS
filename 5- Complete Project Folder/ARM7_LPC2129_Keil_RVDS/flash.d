@@ -1,0 +1,16 @@
+.\flash.o: ..\Common\Minimal\flash.c
+.\flash.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\flash.o: ..\..\Source\include\FreeRTOS.h
+.\flash.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\flash.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\flash.o: .\FreeRTOSConfig.h
+.\flash.o: C:\Keil_v5\ARM\INC\Philips\lpc21xx.h
+.\flash.o: ..\..\Source\include\projdefs.h
+.\flash.o: ..\..\Source\include\portable.h
+.\flash.o: ..\..\Source\include\deprecated_definitions.h
+.\flash.o: ..\..\Source\include\..\..\Source\portable\RVDS\ARM7_LPC21xx\portmacro.h
+.\flash.o: ..\..\Source\include\mpu_wrappers.h
+.\flash.o: ..\..\Source\include\task.h
+.\flash.o: ..\..\Source\include\list.h
+.\flash.o: ..\Common\include\partest.h
+.\flash.o: ..\Common\include\flash.h
